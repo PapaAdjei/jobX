@@ -21,7 +21,7 @@ class CustomUserTests(TestCase):
         User = get_user_model()
         admin_user = User.objects.create_superuser(
             username='superadmin',
-            email='auperadmin@email.com',
+            email='superadmin@email.com',
             password='testpass123'
         )
         self.assertEqual(admin_user.username, 'superadmin')
